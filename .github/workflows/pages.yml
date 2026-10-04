@@ -37,6 +37,10 @@ jobs:
         run: |
           ./scripts/build-native.sh
           npm run build:providers -- sameboy
+      - name: Build Pages from repo-owned build
+        run: ./scripts/build-pages.sh
+      - name: Browser WASM validation
+        run: npm run test:pages
       - name: Native RetroHost validation
         env:
           RETRO_CORE: ${{ github.workspace }}/vendor-sources/sameboy/build/bin/sameboy_libretro.so
@@ -44,10 +48,6 @@ jobs:
           npm test
           npm run library:catalog
           npm run test:bundled
-      - name: Build Pages from repo-owned build
-        run: ./scripts/build-pages.sh
-      - name: Browser WASM validation
-        run: npm run test:pages
       - uses: actions/configure-pages@v5
         with:
           enablement: true
