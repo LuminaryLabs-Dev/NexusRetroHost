@@ -9,7 +9,10 @@ const errors=[],browser=await chromium.launch({headless:true}),page=await browse
 try{
  await page.goto(`http://127.0.0.1:${server.address().port}/`,{waitUntil:"networkidle"});
  await page.waitForFunction(()=>document.querySelectorAll(".game-card").length===50);
- await page.locator(".game-card").first().click();await page.waitForFunction(()=>document.querySelector("#status")?.textContent?.startsWith("Loaded"));
+ await page.locator(".game-card").first().click();
+ await page.waitForFunction(()=>{const status=document.querySelector("#status");return status?.textContent?.startsWith("Loaded")||status?.classList.contains("error")},{},{timeout:15000});
+ const loadState=await page.locator("#status").evaluate(el=>({text:el.textContent,error:el.classList.contains("error")}));
+ if(loadState.error)throw new Error(`Game load failed: ${loadState.text}; browser errors: ${errors.join(" | ")}`);
  await page.locator("#step").click();await page.waitForFunction(()=>document.querySelector("#frame-badge")?.textContent==="Frame 1");
  const rendered=await page.locator("#screen").evaluate(c=>c.width>0&&c.height>0);if(!rendered)throw new Error("Canvas did not render.");
  await page.locator("#inspect").click();await page.waitForFunction(()=>document.querySelector("#state")?.textContent?.includes('"history"'));
