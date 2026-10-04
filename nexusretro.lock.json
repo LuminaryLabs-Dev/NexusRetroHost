@@ -1,0 +1,54 @@
+{
+  "schema": "nexusretro.lock/1",
+  "engine": {
+    "commit": "2b5e070fab8c73986174b842559b96a7fd2db662",
+    "version": "0.0.4",
+    "registryHash": "sha256:538fdb5fada709cbf7f305e58401c6fd260738cc2642704352fa180021ce2738",
+    "npmPackHash": "sha256:91e8fe7852603ceddf6f3576f38d3d73ea4d99aa858eb3b9794ae64afc4c0eba"
+  },
+  "kits": {
+    "commit": "85709ae3752239c21039328206bf24f8e4f0f15c",
+    "version": "0.0.1",
+    "npmPackHash": "sha256:9a98c3206db5c49ced40671e952e3a8934ce15b9b38e89978e87f50db5a8909f"
+  },
+  "worker": {
+    "protocol": 1,
+    "sourceHash": "sha256:3a671d0dbd95c072155d34fdb7ba7b11ec239257a6d5094c8bd7bf8755f940cd",
+    "testedBinaryHash": "sha256:f5d13b9d7abde78da2438eebd0382d67de75130d7b6f07de32a0e324ec30d440",
+    "language": "C++20"
+  },
+  "providers": [
+    {
+      "id": "sameboy",
+      "source": "https://github.com/LIJI32/SameBoy",
+      "commit": "c458e7c5d2d350fb37a1931c40da9f758d28d240",
+      "license": "MIT",
+      "testedBinaryHash": "sha256:ca344c7671416e3cad1662e452f595b9d681b79f57855c4ca4bb045ba6a312a8",
+      "settings": {
+        "sameboy_model": "Game Boy"
+      },
+      "qualification": "GB corpus and native/browser integration"
+    },
+    {
+      "id": "bsnes",
+      "source": "https://github.com/libretro/bsnes-libretro",
+      "commit": "05439f96121d2b9d7ad7a5fc1f29d7eebdcc8c43",
+      "license": "GPL-3.0",
+      "testedBinaryHash": "sha256:0be9499ae23e33028fe868bbc22fd68cf34272836db1a0e2d189c6bd9cdd8c17",
+      "qualification": "build and protocol handshake only"
+    }
+  ],
+  "profiles": {
+    "gbmicrotest": {
+      "fileHash": "sha256:fa89cfc6ad04d7b3da0581e07210bd6c8959ba1bdc3fc9b6cdc1699d5a3219de",
+      "schema": "nexusretro.game-profile/1"
+    }
+  },
+  "corpus": {
+    "count": 50,
+    "sourceCommit": "463eb6bc0fe31d61781ef63060ad6d74090c0255",
+    "manifestHash": "sha256:7b480c4a9e4d9851d6c8b145921006d3cf6007e22140d95faaf9a9cdd4ef5e1c",
+    "license": "MIT",
+    "publicDomain": false
+  }
+}

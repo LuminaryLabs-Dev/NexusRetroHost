@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema",
+    "contentHashes",
+    "memoryRanges",
+    "fields"
+  ],
+  "properties": {
+    "schema": {
+      "const": "nexusretro.game-profile/1"
+    },
+    "contentHashes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^sha256:[a-f0-9]{64}$"
+      }
+    },
+    "memoryRanges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "space",
+          "address",
+          "length"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "space": {
+            "enum": [
+              "cpu",
+              "system",
+              "save"
+            ]
+          },
+          "address": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1048576
+          }
+        }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "segment",
+          "offset",
+          "width",
+          "destination"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "segment": {
+            "type": "string"
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "width": {
+            "enum": [
+              1,
+              2,
+              4
+            ]
+          },
+          "endian": {
+            "enum": [
+              "little",
+              "big"
+            ]
+          },
+          "destination": {
+            "type": "object",
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "meter",
+                  "spatial",
+                  "descriptor"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

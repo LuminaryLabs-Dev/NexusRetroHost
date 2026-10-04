@@ -1,0 +1,8 @@
+{
+  "schema": "nexusretro.corpus-import/1",
+  "sourceCommit": "463eb6bc0fe31d61781ef63060ad6d74090c0255",
+  "count": 50,
+  "manifestHash": "sha256:e7ad70976767d39216abd8779ef5459ed7d9e5b41842422ec87d7e8405218be0",
+  "license": "MIT",
+  "publicDomain": false
+}

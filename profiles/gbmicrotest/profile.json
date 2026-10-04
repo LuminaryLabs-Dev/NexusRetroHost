@@ -1,0 +1,118 @@
+{
+  "schema": "nexusretro.game-profile/1",
+  "id": "gbmicrotest-dmg",
+  "version": 1,
+  "system": "gb",
+  "contentHashes": [
+    "sha256:e1727dec7a3a0bf8bef133f3587b4fad6fdb6e58baca563afcf53da27e995ce9",
+    "sha256:c5f095357bc3d5e453f75995cd4c1e0b6aa8b161f42f894831020fb52fc604c0",
+    "sha256:cef18dea8684e12e901196449c13e6f19fe99380aa01f1690ccb3e83fc562c7d",
+    "sha256:7738a9ef75327827eb82e056305db4d19fa2a1dd85b6ed229ee7759ffdf4f09d",
+    "sha256:37d04544b0828bdc2e5bd6a2da55a77405d3afe26128976f35f613f09c930870",
+    "sha256:d21415af654136928872e7a1b452cc6c1d01916f0f65da36ef83b26a68da6b4a",
+    "sha256:e49abc535cd1bda729e9c8c932c6b518a2a5f4fd34da99aeaf4e0d21a1c44a83",
+    "sha256:fc551f9eab62bdc01a2987996807e71ad168926a34ffe6209d505d7d85344c96",
+    "sha256:8eebf81c8e08c56827ee56c58b3ed9db9ec322d6d6109b93bae1709faa29f609",
+    "sha256:bec8dfee1fd31b68c0517c1514db8ac8e390c1636d498f7ef797fce66725585c",
+    "sha256:adcbaa9ebd36e80fc22147eef1a0a67542b434a0e4a750dbd0b8f488fa064bc1",
+    "sha256:47582c5dad0b9b5d432b7ace96aabbf9c983c8b8bb41e3bbea7483b11a3ae7fe",
+    "sha256:e062c9f24691f96f33edcaf4be1ac146caf6fcd923b7165175ed39aabc4f58f9",
+    "sha256:b3939a982b41d3e50af82bf185209cdd2d212ad3859a7077c96ee34ab65617c4",
+    "sha256:48c5e58a334d9a7258e222622cf75989b4d02ddc093e381d6dd7b8c299375562",
+    "sha256:197077a987a2a3542ed999b265447808638d8c7a6c0c9d216cc2a9359b1893a6",
+    "sha256:f3010bc61731e02bd1ff682afd698f9caa973a687f42f19258aeeb4fc582e060",
+    "sha256:00f27bdf624b7b7e77fcab504942f816745f63855353191e8d76274e34e54d57",
+    "sha256:2bc6fb6b4f49457d00757219e981cd54b1e344b559967f11e2602715dbb8b83d",
+    "sha256:dccd1d1f5b1956e96ca13e7e1dd305f5d8dcd4a5585f6d8bc3a432d1bd5686db",
+    "sha256:be3aa1a7e8aa209c948e615942a2ec30db030f9fee2b3085b2616ef3ae34cc04",
+    "sha256:b6359da4ad75960af3a334bb1387284e8cc40a433ba2377d8bb7ebc8772f2344",
+    "sha256:f1c9a11473da1b5f8a81a13fb743b196b078e172cfabff61eedbdf09e501d403",
+    "sha256:8b39f0d9409fc57fa333303ac2e4cfdf12f74facaf6433775507ae33c28fea98",
+    "sha256:31cb905aea45c7c05b45a3e5e762012af05a5ff3e160c72d985b699333620754",
+    "sha256:f58716e2d2bdb2f07963ceaccdddf9755e1e3baa689f612572934482db247fd9",
+    "sha256:266b90c681fc51048ad95dbad4e39ff5a5d01914becdda5ec71e78f0d1442940",
+    "sha256:03ef5dd58f46cdd14412f4e6e4c99938ecdf386a2f68e3666bd56731b7e93286",
+    "sha256:9ef1905bbc06f89f038c7efdf07c901ccf8a754bda8306d3bb1d000aac556869",
+    "sha256:a9b2788d63292991bb9179b4e7eb910f0ad10702c5a6b0ad7c8f38181e247896",
+    "sha256:5a93cf5a2517505acb16e2ebacb9d13290026b9bdfe4cf276b972e2c94c98b29",
+    "sha256:64b8361a6117bf44af432e3552e2079bfb5a4547bdfa4c3bcb667bfcbbbc7dd2",
+    "sha256:60496dd226f82148fd7815c3fd534d224bc0f12fe4ce74059f72de5709496da3",
+    "sha256:b4f0322878f2e36062afd6e5962c90428227eb8b557265500ad96b11287472e2",
+    "sha256:e313e3e016f39237d0a8e0c09995a2b6f35a474b3c0f1505be155ac0cef1eeed",
+    "sha256:90862f2bed7e6534735db8d074283b37c1f6b4dc9988eb7f6fe56336cd0558ee",
+    "sha256:6a6890f5438d620f60da014c7fde25d4deaf3628e9d7449a58ffec61df0275e8",
+    "sha256:7c20a1148746bbf6718ec639c91fc979dabe6917b716827d76379422ee5dd690",
+    "sha256:2eeff367de4c3da0804bf0c31ae4f406cf7a8837010a6b665b07883f7317d87a",
+    "sha256:63515961dd7791f6cbef67b902329c869ee21c66e9d0828462fd230050ae4a6b",
+    "sha256:ab1656911841d9fdcbe34aad21dc44f554e84a6eef5a82558dc27c8e9a89250c",
+    "sha256:ed8ce0485ccedbc7b044a5effc4c5a9b257cc54239716b81a4e6d8c824547319",
+    "sha256:f7511da96bdbeda9dcfec50d4e5e09e9627984ad2953d35508180794952ee9a3",
+    "sha256:ad53e9feb68cfe8d0cff6374d606eaea7cb49297f8e5284825ac42e32192be91",
+    "sha256:d73b0558d2db127a58261294b777e90a3759a9fcc53514e99a965d45a28e8f30",
+    "sha256:1530b5a34af78e182c8b1f5f9043f8e5ae3e9f2fac13d43f3c5714eece282706",
+    "sha256:861eb26b333e5ab67bc84d369ecf0866ac2d4c11952f7e363716448d5eef8b6f",
+    "sha256:8c4a42179e88bb479f0dade6e2719ae81f4f20b15b6d86c00e8d0f4228a81720",
+    "sha256:be14feeb3ad26ee3210e455ed6439f840945f17c5f6b9cef7c0bf9c9e7780aab",
+    "sha256:656c2f0f11206ac8a404a365cb44ce4e4cb97687c7fb6b784c95a430828da136"
+  ],
+  "memoryRanges": [
+    {
+      "id": "oracle",
+      "space": "cpu",
+      "address": 65408,
+      "length": 3
+    }
+  ],
+  "oracle": {
+    "completion": "source-verified-stable-marker",
+    "source": "tests/corpus/sources/gbmicrotest/macros.inc",
+    "warmupFrames": 60
+  },
+  "fields": [
+    {
+      "id": "actual",
+      "segment": "oracle",
+      "offset": 0,
+      "width": 1,
+      "signed": false,
+      "endian": "little",
+      "min": 0,
+      "max": 255,
+      "destination": {
+        "kind": "descriptor",
+        "domain": "diagnostics",
+        "type": "rom-test"
+      }
+    },
+    {
+      "id": "expected",
+      "segment": "oracle",
+      "offset": 1,
+      "width": 1,
+      "signed": false,
+      "endian": "little",
+      "min": 0,
+      "max": 255,
+      "destination": {
+        "kind": "descriptor",
+        "domain": "diagnostics",
+        "type": "rom-test"
+      }
+    },
+    {
+      "id": "marker",
+      "segment": "oracle",
+      "offset": 2,
+      "width": 1,
+      "signed": false,
+      "endian": "little",
+      "min": 0,
+      "max": 255,
+      "destination": {
+        "kind": "descriptor",
+        "domain": "diagnostics",
+        "type": "rom-test"
+      }
+    }
+  ]
+}

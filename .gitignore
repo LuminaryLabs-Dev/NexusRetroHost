@@ -1,0 +1,8 @@
+node_modules/
+build/
+cores/
+vendor-sources/
+*.save
+.test-results/
+reports/local/
+saves/

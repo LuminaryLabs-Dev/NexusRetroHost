@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "protocolVersion",
+    "requestId",
+    "sessionId",
+    "epoch",
+    "binaryLength"
+  ],
+  "properties": {
+    "protocolVersion": {
+      "const": 1
+    },
+    "requestId": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sessionId": {
+      "type": "string"
+    },
+    "epoch": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "binaryLength": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 134217728
+    },
+    "command": {
+      "enum": [
+        "hello",
+        "loadContent",
+        "step",
+        "reset",
+        "serialize",
+        "unserialize",
+        "close"
+      ]
+    },
+    "ok": {
+      "type": "boolean"
+    }
+  }
+}

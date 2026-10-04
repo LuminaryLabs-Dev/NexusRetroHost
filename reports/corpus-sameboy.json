@@ -1,0 +1,480 @@
+{
+  "schema": "nexusretro.corpus-report/1",
+  "core": {
+    "capabilities": [
+      "frame-step",
+      "software-video",
+      "pcm",
+      "serialize",
+      "memory-maps"
+    ],
+    "extensions": "gb|gbc",
+    "name": "SameBoy",
+    "protocolVersion": 1,
+    "version": "1.0.3 c458e7c",
+    "coreHash": "sha256:ca344c7671416e3cad1662e452f595b9d681b79f57855c4ca4bb045ba6a312a8"
+  },
+  "settings": {
+    "sameboy_model": "Game Boy"
+  },
+  "sourceCommit": "463eb6bc0fe31d61781ef63060ad6d74090c0255",
+  "results": [
+    {
+      "id": "timer_tima_inc_256k_a.gb",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_b.gb",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_c.gb",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_d.gb",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_e.gb",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_f.gb",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_g.gb",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_h.gb",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_i.gb",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_j.gb",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_inc_256k_k.gb",
+      "status": "PASS",
+      "actual": 4,
+      "expected": 4,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_a.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_b.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_c.gb",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_d.gb",
+      "status": "PASS",
+      "actual": 52,
+      "expected": 52,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_e.gb",
+      "status": "PASS",
+      "actual": 52,
+      "expected": 52,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_f.gb",
+      "status": "PASS",
+      "actual": 52,
+      "expected": 52,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_g.gb",
+      "status": "PASS",
+      "actual": 53,
+      "expected": 53,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_h.gb",
+      "status": "PASS",
+      "actual": 53,
+      "expected": 53,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "timer_tima_reload_256k_i.gb",
+      "status": "PASS",
+      "actual": 53,
+      "expected": 53,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l0_a.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l0_b.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l0_c.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l0_d.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l1_a.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l1_b.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l1_c.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l1_d.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l1_e.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "oam_read_l1_f.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_read_l0_a.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_read_l0_b.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_read_l1_a.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_read_l1_b.gb",
+      "status": "PASS",
+      "actual": 255,
+      "expected": 255,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_write_l0_a.gb",
+      "status": "PASS",
+      "actual": 145,
+      "expected": 145,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_write_l0_b.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_write_l1_a.gb",
+      "status": "PASS",
+      "actual": 145,
+      "expected": 145,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "vram_write_l1_b.gb",
+      "status": "PASS",
+      "actual": 240,
+      "expected": 240,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "halt_bug.gb",
+      "status": "PASS",
+      "actual": 20,
+      "expected": 20,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "halt_op_dupe.gb",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "halt_op_dupe_delay.gb",
+      "status": "FAIL",
+      "actual": 1,
+      "expected": 85,
+      "marker": 255,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "lcdon_to_ly1_a.gb",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "lcdon_to_ly1_b.gb",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "lcdon_to_ly2_a.gb",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "lcdon_to_ly2_b.gb",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "div_inc_timing_a.gb",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "div_inc_timing_b.gb",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "int_timer_halt.gb",
+      "status": "PASS",
+      "actual": 15,
+      "expected": 15,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "int_timer_incs.gb",
+      "status": "PASS",
+      "actual": 9,
+      "expected": 9,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    },
+    {
+      "id": "int_timer_nops.gb",
+      "status": "PASS",
+      "actual": 14,
+      "expected": 14,
+      "marker": 1,
+      "sourceFrame": 86,
+      "completionPc": null
+    }
+  ],
+  "counts": {
+    "PASS": 49,
+    "FAIL": 1,
+    "TIMEOUT": 0,
+    "UNSUPPORTED": 0,
+    "HOST_ERROR": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@luminarylabs/nexusretrohost",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:native": "node scripts/build-native.mjs",
+    "build:providers": "node scripts/build-providers.mjs",
+    "start": "node src/cli.js serve",
+    "test": "node tests/integration.mjs",
+    "test:corpus": "node src/cli.js corpus",
+    "corpus:verify": "node scripts/import-corpus.mjs --offline",
+    "test:ui": "node tests/ui-smoke.mjs"
+  },
+  "dependencies": {
+    "nexusengine": "git+https://github.com/LuminaryLabs-Dev/NexusEngine.git#2b5e070fab8c73986174b842559b96a7fd2db662",
+    "@luminarylabs/nexusengine-kits": "git+https://github.com/LuminaryLabs-Dev/NexusEngine-Kits.git#85709ae3752239c21039328206bf24f8e4f0f15c"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.51.1"
+  }
+}

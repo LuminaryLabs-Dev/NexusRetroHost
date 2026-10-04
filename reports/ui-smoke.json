@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "browser": "134.0.6998.35",
+  "checks": [
+    "upload",
+    "native frame",
+    "run/pause",
+    "canvas dimensions",
+    "verified corpus profile",
+    "save/restore",
+    "rewind",
+    "Core inspector",
+    "no page errors"
+  ],
+  "sourceFrame": 101
+}
