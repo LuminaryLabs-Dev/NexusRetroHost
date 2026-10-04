@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "totp-gb",
+  "title": "totp-gb",
+  "developer": "dmang-dev",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/totp-gb/game.json",
+    "contentPath": "entries/totp-gb/totp-gb.gb",
+    "repository": "https://github.com/dmang-dev/totp-gb",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/totp-gb.gb",
+    "filename": "totp-gb.gb",
+    "sha256": "sha256:f757a08f67980615dba2770c364e95008a680a92eabeb4d67cecb55eb05836dc",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

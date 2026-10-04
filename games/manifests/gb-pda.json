@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gb-pda",
+  "title": "GB-PDA",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gb-pda/game.json",
+    "contentPath": "entries/gb-pda/pda.gb",
+    "repository": "https://gitlab.com/teamknox/gbcpda",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gb-pda.gb",
+    "filename": "gb-pda.gb",
+    "sha256": "sha256:c867046b584788ff3cb08a60c1efe409efc2a630ffe4e0662f3378f7fccea59a",
+    "bytes": 524288
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

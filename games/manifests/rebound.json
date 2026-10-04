@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "rebound",
+  "title": "Rebound",
+  "developer": "DevEd",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/rebound/game.json",
+    "contentPath": "entries/rebound/Rebound.gbc",
+    "repository": "https://github.com/DevEd2/ReboundGB/",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/rebound.gbc",
+    "filename": "rebound.gbc",
+    "sha256": "sha256:195765b8ca3b0fb7d37b7b92d0242d6c7e01ec71f27f93e565fa081e449cbb92",
+    "bytes": 131072
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

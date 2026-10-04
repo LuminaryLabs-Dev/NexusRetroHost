@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "jp",
+  "title": "JP",
+  "developer": "Graham Coulby (IonicLimb)",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/jp/game.json",
+    "contentPath": "entries/jp/jp.gb",
+    "repository": "https://github.com/gcoulby/JP",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/jp.gb",
+    "filename": "jp.gb",
+    "sha256": "sha256:417fa2e7287fb26f27bc90f51e36c3edb7f5a6745654af870b2cb6fa587bdc8a",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

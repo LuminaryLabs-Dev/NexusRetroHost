@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import { randomBytes, createHash } from 'node:crypto';
 import { readFile, mkdir, writeFile, rm } from 'node:fs/promises';
 import { basename, resolve } from 'node:path';
-const clientPath = new URL('./web/index.html', import.meta.url);
+const clientPath = new URL('./web/native.html', import.meta.url);
 export async function serve(session, port = 8080) {
   const token = randomBytes(24).toString('hex'), uploads = resolve('build/uploads'); await mkdir(uploads, {recursive:true});
   const server = createServer(async (req, res) => {

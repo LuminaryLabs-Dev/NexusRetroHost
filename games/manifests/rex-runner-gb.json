@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "rex-runner-gb",
+  "title": "Rex Runner GB",
+  "developer": "The Void",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/rex-runner-gb/game.json",
+    "contentPath": "entries/rex-runner-gb/rex-runner.gb",
+    "repository": "https://github.com/etdv-thevoid/rex-runner-gb",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/rex-runner-gb.gb",
+    "filename": "rex-runner-gb.gb",
+    "sha256": "sha256:91bd12159d30e86cf4eb0312f28ff1c394e701085d6a8ca641ed92b2bcc8429c",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

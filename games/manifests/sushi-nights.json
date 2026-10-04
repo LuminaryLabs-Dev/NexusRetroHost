@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "sushi-nights",
+  "title": "Sushi Nights",
+  "developer": "Zalo",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/sushi-nights/game.json",
+    "contentPath": "entries/sushi-nights/SushiNights.gb",
+    "repository": "https://github.com/Zal0/SushiNights",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/sushi-nights.gb",
+    "filename": "sushi-nights.gb",
+    "sha256": "sha256:5b3203e60e8815acf75e25c5ae369815da047c0f46b81ad3bcc8513ce7167e25",
+    "bytes": 131072
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

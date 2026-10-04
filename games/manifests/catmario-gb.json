@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "catmario-gb",
+  "title": "CatMario-GB",
+  "developer": "Lazy_V",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/catmario-gb/game.json",
+    "contentPath": "entries/catmario-gb/catmario-gb.gbc",
+    "repository": "https://github.com/zzxzzk115/CatMarioGB",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/catmario-gb.gbc",
+    "filename": "catmario-gb.gbc",
+    "sha256": "sha256:ffe4f597f654f6edc8804aaf8d1014c6f9373f448210fc40ccde9076b300e67e",
+    "bytes": 131072
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

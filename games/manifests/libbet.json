@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "libbet",
+  "title": "Libbet and the Magic Floor",
+  "developer": "Damian Yerrick",
+  "system": "gb",
+  "license": "Zlib",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/libbet/game.json",
+    "contentPath": "entries/libbet/libbet.gb",
+    "repository": "https://github.com/pinobatch/libbet",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/libbet.gb",
+    "filename": "libbet.gb",
+    "sha256": "sha256:079d161bf2bff4f3baec01339b4f6f02ff6f966c69456885a165b97aac11fa12",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

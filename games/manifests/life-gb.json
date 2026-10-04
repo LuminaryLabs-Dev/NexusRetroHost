@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "life-gb",
+  "title": "Conways Game of Life",
+  "developer": "xoxo_grease",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/life-gb/game.json",
+    "contentPath": "entries/life-gb/life.gb",
+    "repository": "https://github.com/Brehana/LIFE_gb",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/life-gb.gb",
+    "filename": "life-gb.gb",
+    "sha256": "sha256:b739ec5b2bb72b547243680429d776277b0a98fa9994b196a016a378278c694b",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

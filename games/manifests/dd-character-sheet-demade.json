@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "dd-character-sheet-demade",
+  "title": "D&D Character Sheet DEMADE",
+  "developer": "Psy",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/dd-character-sheet-demade/game.json",
+    "contentPath": "entries/dd-character-sheet-demade/game.gb",
+    "repository": "https://github.com/trumanhess27/GB_Character_Sheet",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/dd-character-sheet-demade.gb",
+    "filename": "dd-character-sheet-demade.gb",
+    "sha256": "sha256:7b2f62e0f4bf6dc90e7d7a0ca36ab830b670009f1dcd52c43204736901434dda",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

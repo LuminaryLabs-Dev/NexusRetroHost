@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gbcjkit",
+  "title": "Kanji driver kit",
+  "developer": "TeamKNOx",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gbcjkit/game.json",
+    "contentPath": "entries/gbcjkit/jkit.gb",
+    "repository": "https://gitlab.com/teamknox/gbcjkit",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gbcjkit.gb",
+    "filename": "gbcjkit.gb",
+    "sha256": "sha256:858e0309757cbacef398b683f1cc2e0c4dacec73b008d200beeefe021419a2af",
+    "bytes": 524288
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

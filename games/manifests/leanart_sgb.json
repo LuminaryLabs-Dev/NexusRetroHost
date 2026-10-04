@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "leanart_sgb",
+  "title": "Still Got the Blues",
+  "developer": "Lean Art",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/leanart_sgb/game.json",
+    "contentPath": "entries/leanart_sgb/files/sgb_jam.gb",
+    "repository": "https://github.com/TheLeanArt/StillGotTheBlues/",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/leanart_sgb.gb",
+    "filename": "leanart_sgb.gb",
+    "sha256": "sha256:2736d9d1614c2fc8113247fbc5e4546eb12bac3352dcd1500cab4067e5e2df8c",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

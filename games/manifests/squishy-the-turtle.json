@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "squishy-the-turtle",
+  "title": "Squishy the Turtle",
+  "developer": "Cppchriscpp",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/squishy-the-turtle/game.json",
+    "contentPath": "entries/squishy-the-turtle/squishy-magfest.gb",
+    "repository": "https://github.com/potatolain/SquishyTheTurtle",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/squishy-the-turtle.gb",
+    "filename": "squishy-the-turtle.gb",
+    "sha256": "sha256:ac1e2eff95cdcf71ed931bd16c88f080038977b8b9dcde433bc023ee6b86c021",
+    "bytes": 131072
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -11,11 +11,14 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
+#ifdef __EMSCRIPTEN__
+#include <emscripten/emscripten.h>
+#endif
 #ifdef _WIN32
 #include <windows.h>
 #include <fcntl.h>
 #include <io.h>
-#else
+#elif !defined(__EMSCRIPTEN__)
 #include <dlfcn.h>
 #include <unistd.h>
 #endif
@@ -43,7 +46,7 @@ static void write_packet(json header, const bytes& payload = {}) {
 class Core {
 public:
   void* library = nullptr;
-  bool loaded = false, initialized = false, shutdown = false;
+  bool loaded = false, initialized = false, shutdown = false, opened = false;
   unsigned format = RETRO_PIXEL_FORMAT_0RGB1555, width = 0, height = 0;
   size_t pitch = 0; uint64_t frame = 0, epoch = 0;
   std::string session, directory, content_path; bytes content, video, audio;
@@ -67,7 +70,9 @@ public:
   decltype(&retro_get_memory_size) memory_size = nullptr;
 
   template<class T> T symbol(const char* name) {
-#ifdef _WIN32
+#if defined(NEXUSRETRO_STATIC_CORE)
+    (void)name; void* result = nullptr;
+#elif defined(_WIN32)
     void* result = reinterpret_cast<void*>(GetProcAddress(static_cast<HMODULE>(library), name));
 #else
     void* result = dlsym(library, name);
@@ -137,11 +142,16 @@ public:
   }
   void open(const std::string& path) {
     current = this;
-#ifdef _WIN32
+#if defined(NEXUSRETRO_STATIC_CORE)
+    (void)path;
+    init = &retro_init; deinit = &retro_deinit; system_info = &retro_get_system_info; av_info = &retro_get_system_av_info;
+    load = &retro_load_game; unload = &retro_unload_game; run = &retro_run; reset = &retro_reset;
+    serialize_size = &retro_serialize_size; serialize = &retro_serialize; unserialize = &retro_unserialize;
+    memory_data = &retro_get_memory_data; memory_size = &retro_get_memory_size;
+    retro_set_environment(environment); retro_set_video_refresh(video_callback); retro_set_audio_sample(sample_callback);
+    retro_set_audio_sample_batch(audio_callback); retro_set_input_poll(input_poll); retro_set_input_state(input_state);
+#elif defined(_WIN32)
     library = LoadLibraryA(path.c_str());
-#else
-    library = dlopen(path.c_str(), RTLD_NOW | RTLD_LOCAL);
-#endif
     if (!library) throw std::runtime_error("Cannot load core library");
     init = symbol<decltype(init)>("retro_init"); deinit = symbol<decltype(deinit)>("retro_deinit");
     system_info = symbol<decltype(system_info)>("retro_get_system_info"); av_info = symbol<decltype(av_info)>("retro_get_system_av_info");
@@ -149,13 +159,23 @@ public:
     run = symbol<decltype(run)>("retro_run"); reset = symbol<decltype(reset)>("retro_reset");
     serialize_size = symbol<decltype(serialize_size)>("retro_serialize_size"); serialize = symbol<decltype(serialize)>("retro_serialize"); unserialize = symbol<decltype(unserialize)>("retro_unserialize");
     memory_data = symbol<decltype(memory_data)>("retro_get_memory_data"); memory_size = symbol<decltype(memory_size)>("retro_get_memory_size");
-    symbol<decltype(&retro_set_environment)>("retro_set_environment")(environment);
-    symbol<decltype(&retro_set_video_refresh)>("retro_set_video_refresh")(video_callback);
-    symbol<decltype(&retro_set_audio_sample)>("retro_set_audio_sample")(sample_callback);
-    symbol<decltype(&retro_set_audio_sample_batch)>("retro_set_audio_sample_batch")(audio_callback);
-    symbol<decltype(&retro_set_input_poll)>("retro_set_input_poll")(input_poll);
-    symbol<decltype(&retro_set_input_state)>("retro_set_input_state")(input_state);
-    init(); initialized = true;
+    symbol<decltype(&retro_set_environment)>("retro_set_environment")(environment); symbol<decltype(&retro_set_video_refresh)>("retro_set_video_refresh")(video_callback);
+    symbol<decltype(&retro_set_audio_sample)>("retro_set_audio_sample")(sample_callback); symbol<decltype(&retro_set_audio_sample_batch)>("retro_set_audio_sample_batch")(audio_callback);
+    symbol<decltype(&retro_set_input_poll)>("retro_set_input_poll")(input_poll); symbol<decltype(&retro_set_input_state)>("retro_set_input_state")(input_state);
+#else
+    library = dlopen(path.c_str(), RTLD_NOW | RTLD_LOCAL);
+    if (!library) throw std::runtime_error("Cannot load core library");
+    init = symbol<decltype(init)>("retro_init"); deinit = symbol<decltype(deinit)>("retro_deinit");
+    system_info = symbol<decltype(system_info)>("retro_get_system_info"); av_info = symbol<decltype(av_info)>("retro_get_system_av_info");
+    load = symbol<decltype(load)>("retro_load_game"); unload = symbol<decltype(unload)>("retro_unload_game");
+    run = symbol<decltype(run)>("retro_run"); reset = symbol<decltype(reset)>("retro_reset");
+    serialize_size = symbol<decltype(serialize_size)>("retro_serialize_size"); serialize = symbol<decltype(serialize)>("retro_serialize"); unserialize = symbol<decltype(unserialize)>("retro_unserialize");
+    memory_data = symbol<decltype(memory_data)>("retro_get_memory_data"); memory_size = symbol<decltype(memory_size)>("retro_get_memory_size");
+    symbol<decltype(&retro_set_environment)>("retro_set_environment")(environment); symbol<decltype(&retro_set_video_refresh)>("retro_set_video_refresh")(video_callback);
+    symbol<decltype(&retro_set_audio_sample)>("retro_set_audio_sample")(sample_callback); symbol<decltype(&retro_set_audio_sample_batch)>("retro_set_audio_sample_batch")(audio_callback);
+    symbol<decltype(&retro_set_input_poll)>("retro_set_input_poll")(input_poll); symbol<decltype(&retro_set_input_state)>("retro_set_input_state")(input_state);
+#endif
+    init(); initialized = true; opened = true;
   }
   static size_t compact(size_t address, size_t disconnect) {
     size_t result = 0, bit = 1;
@@ -189,8 +209,8 @@ public:
   json dispatch(const json& request, const bytes& input, bytes& output) {
     const std::string command = request.at("command"), sid = request.value("sessionId", std::string());
     const uint64_t requested_epoch = request.value("epoch", uint64_t(0)); const auto payload = request.value("payload", json::object());
-    if (command == "hello") {
-      if (!library) { directory = payload.value("systemDirectory", std::filesystem::current_path().string()); options = payload.value("options", std::map<std::string, std::string>()); open(payload.at("corePath")); }
+    if (command == "hello" || command == "initialize") {
+      if (!opened) { directory = payload.value("systemDirectory", std::filesystem::current_path().string()); options = payload.value("options", std::map<std::string, std::string>()); open(payload.value("corePath", std::string())); }
       retro_system_info info{}; system_info(&info);
       return {{"protocolVersion",1},{"name",info.library_name ? info.library_name : "unknown"},{"version",info.library_version ? info.library_version : "unknown"},{"extensions",info.valid_extensions ? info.valid_extensions : ""},{"capabilities",{"frame-step","software-video","pcm","serialize","memory-maps"}}};
     }
@@ -219,6 +239,17 @@ public:
       const size_t size = serialize_size(); if (!size || size > MAX_BINARY) throw std::runtime_error("Serialization unsupported or too large");
       output.resize(size); if (!serialize(output.data(), size)) throw std::runtime_error("Serialization failed"); return {{"sourceFrame",frame}};
     }
+    if (command == "readMemory") {
+      json segments = json::array(); const auto ranges = payload.value("memoryRanges", json::array());
+      if (!ranges.is_array() || ranges.size() > 256) throw std::runtime_error("Invalid observation count");
+      for (const auto& range : ranges) {
+        const auto data = observe(range);
+        if (data.size() > MAX_BINARY - output.size()) throw std::runtime_error("Memory binary budget exceeded");
+        segments.push_back({{"id",range.at("id")},{"offset",output.size()},{"length",data.size()}});
+        output.insert(output.end(),data.begin(),data.end());
+      }
+      return {{"sourceFrame",frame},{"segments",segments}};
+    }
     if (command == "step") {
       if (shutdown) throw std::runtime_error("Core shut down or requested unsupported rendering");
       buttons = payload.value("buttons", std::vector<uint16_t>{0}); audio.clear(); run(); ++frame;
@@ -235,7 +266,9 @@ public:
     throw std::runtime_error("Unknown command");
   }
   ~Core() { if (loaded) unload(); if (initialized) deinit();
-#ifdef _WIN32
+#if defined(NEXUSRETRO_STATIC_CORE)
+    (void)library;
+#elif defined(_WIN32)
     if (library) FreeLibrary(static_cast<HMODULE>(library));
 #else
     if (library) dlclose(library);
@@ -243,6 +276,33 @@ public:
   }
 };
 Core* Core::current = nullptr;
+#ifdef __EMSCRIPTEN__
+static Core wasm_core;
+static bytes wasm_binary;
+static std::string wasm_response;
+extern "C" {
+EMSCRIPTEN_KEEPALIVE const char* nexusretro_dispatch(const char* request_text, const uint8_t* input_data, size_t input_size) {
+  json request = json::object(), response = json::object();
+  wasm_binary.clear();
+  try {
+    request = json::parse(request_text ? request_text : "{}");
+    response = {{"requestId",request.value("requestId",0)},{"sessionId",request.value("sessionId",std::string())},{"epoch",request.value("epoch",uint64_t(0))},{"protocolVersion",1}};
+    if (request.value("protocolVersion",0) != 1) throw std::runtime_error("Incompatible protocol");
+    bytes input; if (input_data && input_size) input.assign(input_data,input_data+input_size);
+    const std::string command = request.at("command");
+    if (command == "close") response["result"] = json::object();
+    else if (command == "initialize") { auto alias=request; alias["command"]="hello"; response["result"]=wasm_core.dispatch(alias,input,wasm_binary); }
+    else response["result"] = wasm_core.dispatch(request,input,wasm_binary);
+    response["ok"] = true;
+  } catch (const std::exception& error) {
+    response["ok"] = false; response["error"] = error.what(); wasm_binary.clear();
+  }
+  response["binaryLength"] = wasm_binary.size(); wasm_response = response.dump(); return wasm_response.c_str();
+}
+EMSCRIPTEN_KEEPALIVE const uint8_t* nexusretro_binary_data() { return wasm_binary.empty() ? nullptr : wasm_binary.data(); }
+EMSCRIPTEN_KEEPALIVE size_t nexusretro_binary_size() { return wasm_binary.size(); }
+}
+#else
 int main() {
 #ifdef _WIN32
   _setmode(_fileno(stdin), _O_BINARY); _setmode(_fileno(stdout), _O_BINARY);
@@ -275,3 +335,5 @@ int main() {
   } catch (const std::exception& error) { std::cerr << error.what() << '\n'; return 1; }
   return 0;
 }
+
+#endif

@@ -1,0 +1,39 @@
+{
+  "schema": "nexusretro.system-registry/1",
+  "systems": [
+    {
+      "id": "gb",
+      "formats": [
+        ".gb"
+      ],
+      "core": "sameboy",
+      "native": "playable",
+      "web": "playable",
+      "stateObservation": "supported",
+      "qualification": "50 bundled-library release gate + GBMicrotest corpus"
+    },
+    {
+      "id": "gbc",
+      "formats": [
+        ".gbc"
+      ],
+      "core": "sameboy",
+      "native": "playable",
+      "web": "playable",
+      "stateObservation": "supported",
+      "qualification": "bundled-library release gate"
+    },
+    {
+      "id": "snes",
+      "formats": [
+        ".sfc",
+        ".smc"
+      ],
+      "core": "bsnes",
+      "native": "handshake-only",
+      "web": "not-built",
+      "stateObservation": "unqualified",
+      "qualification": "not part of current Pages release"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gb-dtmf",
+  "title": "DTMF Dialer for GBC",
+  "developer": "TeamKNOx",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gb-dtmf/game.json",
+    "contentPath": "entries/gb-dtmf/GB-DTMF.GB",
+    "repository": "https://gitlab.com/teamknox/gbcdtmf",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gb-dtmf.gb",
+    "filename": "gb-dtmf.gb",
+    "sha256": "sha256:38a5a391494bfb3e72fba07b463f16590724953a60d55f72c93852a2e712680e",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

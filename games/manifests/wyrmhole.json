@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "wyrmhole",
+  "title": "WYRMHOLE",
+  "developer": "quinnp",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/wyrmhole/game.json",
+    "contentPath": "entries/wyrmhole/Wyrmhole.gb",
+    "repository": "https://github.com/QuinnPainter/Wyrmhole",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/wyrmhole.gb",
+    "filename": "wyrmhole.gb",
+    "sha256": "sha256:a5e07f89119ee9c93aa50ec1ff828b2441781fa9b1a137f03af7b6c53ce03252",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,66 @@
+name: Build and deploy NexusRetroHost Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: "3.1.74"
+      - name: Install native build prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake bison flex libpng-dev pkg-config
+          git clone --depth 1 --branch v1.0.4 https://github.com/gbdev/rgbds.git /tmp/rgbds
+          cmake -S /tmp/rgbds -B /tmp/rgbds/build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/tmp/rgbds-install
+          cmake --build /tmp/rgbds/build -j2
+          cmake --install /tmp/rgbds/build
+          echo "/tmp/rgbds-install/bin" >> "$GITHUB_PATH"
+      - run: npm ci --ignore-scripts
+      - run: npx playwright install --with-deps chromium
+      - name: Native worker and SameBoy
+        run: |
+          ./scripts/build-native.sh
+          npm run build:providers -- sameboy
+      - name: Native RetroHost validation
+        env:
+          RETRO_CORE: ${{ github.workspace }}/vendor-sources/sameboy/build/bin/sameboy_libretro.so
+        run: |
+          npm test
+          npm run library:catalog
+          npm run test:bundled
+      - name: Build Pages from repo-owned build
+        run: ./scripts/build-pages.sh
+      - name: Browser WASM validation
+        run: npm run test:pages
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

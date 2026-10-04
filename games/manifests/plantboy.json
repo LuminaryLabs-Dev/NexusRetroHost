@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "plantboy",
+  "title": "PlantBoy",
+  "developer": "exezin",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/plantboy/game.json",
+    "contentPath": "entries/plantboy/PlantBoy.gb",
+    "repository": "https://github.com/exezin/PlantBoy",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/plantboy.gb",
+    "filename": "plantboy.gb",
+    "sha256": "sha256:4b62569dfa8eda20912166b66306ff71885282916e78d760e2a7e3ec4ab3aa01",
+    "bytes": 16384
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

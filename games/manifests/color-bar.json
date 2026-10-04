@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "color-bar",
+  "title": "Color bar display for GBC",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/color-bar/game.json",
+    "contentPath": "entries/color-bar/colorbar.gb",
+    "repository": "https://gitlab.com/teamknox/gbccolorbar",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/color-bar.gb",
+    "filename": "color-bar.gb",
+    "sha256": "sha256:05c1f84cd46f2cf2d861da14ecac1c1a70a8bc4ff27f073f1ec7489f19a2ea51",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

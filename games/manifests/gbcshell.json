@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gbcshell",
+  "title": "GB-SHELL",
+  "developer": "TeamKNOx",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gbcshell/game.json",
+    "contentPath": "entries/gbcshell/shell.gb",
+    "repository": "https://gitlab.com/teamknox/gbcshell",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gbcshell.gb",
+    "filename": "gbcshell.gb",
+    "sha256": "sha256:e296f3b646591a7c5ddf697e87fe3fc7e7d8cebef1e4454c555422a81206cb9d",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

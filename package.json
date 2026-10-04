@@ -10,7 +10,14 @@
     "test": "node tests/integration.mjs",
     "test:corpus": "node src/cli.js corpus",
     "corpus:verify": "node scripts/import-corpus.mjs --offline",
-    "test:ui": "node tests/ui-smoke.mjs"
+    "test:ui": "node tests/ui-smoke.mjs",
+    "build:wasm": "./scripts/build-wasm.sh",
+    "build:pages": "./scripts/build-pages.sh",
+    "validate:release": "./scripts/validate-release.sh",
+    "library:verify": "node scripts/verify-game-library.mjs",
+    "library:catalog": "node scripts/generate-catalog.mjs",
+    "test:bundled": "node tests/bundled-games.mjs",
+    "test:pages": "node tests/pages-smoke.mjs"
   },
   "dependencies": {
     "nexusengine": "git+https://github.com/LuminaryLabs-Dev/NexusEngine.git#2b5e070fab8c73986174b842559b96a7fd2db662",

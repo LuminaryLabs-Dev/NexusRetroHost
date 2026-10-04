@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gunpey",
+  "title": "Namihey",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gunpey/game.json",
+    "contentPath": "entries/gunpey/namihey.gb",
+    "repository": "https://gitlab.com/teamknox/gbcnamihey",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gunpey.gb",
+    "filename": "gunpey.gb",
+    "sha256": "sha256:d63f596767594c20bd276d5422b80f95304d35ede11271e0d54d8d968d6fbcfc",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

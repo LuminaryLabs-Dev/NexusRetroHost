@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "maxpirateeb",
+  "title": "Max Pirate Extra Boom",
+  "developer": "Lemmy Hawkins",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/maxpirateeb/game.json",
+    "contentPath": "entries/maxpirateeb/maxpirateeb.gb",
+    "repository": "https://github.com/MWehrstedt/MaxPirateExtra",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/maxpirateeb.gb",
+    "filename": "maxpirateeb.gb",
+    "sha256": "sha256:11320e82aea34d56c3b8b5cabd3c15122ff0bbb281ec397d39b3f80a0bda688c",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

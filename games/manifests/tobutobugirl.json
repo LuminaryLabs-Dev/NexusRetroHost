@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "tobutobugirl",
+  "title": "Tobu Tobu Girl",
+  "developer": "Tangram Games",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/tobutobugirl/game.json",
+    "contentPath": "entries/tobutobugirl/tobu.gb",
+    "repository": "https://github.com/SimonLarsen/tobutobugirl",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/tobutobugirl.gb",
+    "filename": "tobutobugirl.gb",
+    "sha256": "sha256:5d3871cae77db2287807e8914fd21f76203e73aa3fec20955489d45cb4571d8f",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gbccardgame",
+  "title": "Pelmanism",
+  "developer": "TeamKNOx",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gbccardgame/game.json",
+    "contentPath": "entries/gbccardgame/pelmanism.gb",
+    "repository": "https://gitlab.com/teamknox/gbccardgame",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gbccardgame.gb",
+    "filename": "gbccardgame.gb",
+    "sha256": "sha256:3dcfc0c06543f3006a2d8344661c9da94b5266c34a4e310d8f42b8f17ded6a0a",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "postie",
+  "title": "Postie",
+  "developer": "invertedHat",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/postie/game.json",
+    "contentPath": "entries/postie/Postie-1.1.gbc",
+    "repository": "https://github.com/inverted-hat/postie",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/postie.gbc",
+    "filename": "postie.gbc",
+    "sha256": "sha256:a2dfc32e5468fa0a8d2529bfc344528517b7615ad104f264e400c67c5b314a98",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

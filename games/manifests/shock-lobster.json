@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "shock-lobster",
+  "title": "Shock Lobster",
+  "developer": "tbsp",
+  "system": "gb",
+  "license": "ZLib",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/shock-lobster/game.json",
+    "contentPath": "entries/shock-lobster/shocklobster.gb",
+    "repository": "https://github.com/tbsp/shock-lobster",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/shock-lobster.gb",
+    "filename": "shock-lobster.gb",
+    "sha256": "sha256:f14efd0340903b1b00d7e8b4b39687d4bc33355ac7742267ccfddfe92f54a611",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

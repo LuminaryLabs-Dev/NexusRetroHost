@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "grub-glide",
+  "title": "Grub Glide",
+  "developer": "Ethan Hazel",
+  "system": "gb",
+  "license": "Zlib",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/grub-glide/game.json",
+    "contentPath": "entries/grub-glide/GrubGlide.gb",
+    "repository": "https://github.com/Exetric/GrubGlide",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/grub-glide.gb",
+    "filename": "grub-glide.gb",
+    "sha256": "sha256:7cb3d8ae5dd5d042436982f0e78a5daab4d99620eb50adb260cab9b37221b9c0",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

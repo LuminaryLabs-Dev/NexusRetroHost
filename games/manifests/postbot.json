@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "postbot",
+  "title": "PostBot",
+  "developer": "Tobias Rojahn",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/postbot/game.json",
+    "contentPath": "entries/postbot/PostBot.gb",
+    "repository": "https://github.com/MasterIV/PostBot",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/postbot.gb",
+    "filename": "postbot.gb",
+    "sha256": "sha256:65824d3d7df8003f19923b38055a0660c20542cc363894091da661d9d49d13ad",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

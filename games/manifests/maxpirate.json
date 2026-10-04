@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "maxpirate",
+  "title": "Max Pirate",
+  "developer": "Lemmy Hawkins",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/maxpirate/game.json",
+    "contentPath": "entries/maxpirate/maxpirate.gb",
+    "repository": "https://github.com/MWehrstedt/MaxPirate",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/maxpirate.gb",
+    "filename": "maxpirate.gb",
+    "sha256": "sha256:ade748a976cc87d382cf538daf441a3545c324c81d5fcda1f89ec0511b227d7a",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

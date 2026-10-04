@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "deep-scan",
+  "title": "Deep Scan for GBC",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/deep-scan/game.json",
+    "contentPath": "entries/deep-scan/dscan.gb",
+    "repository": "https://gitlab.com/teamknox/gbcdeepscan",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/deep-scan.gb",
+    "filename": "deep-scan.gb",
+    "sha256": "sha256:eda9b4caa0bddf091f4ea78254abbea7c3dcd384fb472752221620cd09f56d6a",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

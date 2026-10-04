@@ -30,12 +30,14 @@
     },
     "command": {
       "enum": [
+        "initialize",
         "hello",
         "loadContent",
         "step",
         "reset",
         "serialize",
         "unserialize",
+        "readMemory",
         "close"
       ]
     },

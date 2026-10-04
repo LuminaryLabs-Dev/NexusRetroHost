@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gb-rem",
+  "title": "Learning RemCon",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gb-rem/game.json",
+    "contentPath": "entries/gb-rem/gb-rem.gb",
+    "repository": "https://gitlab.com/teamknox/gbcremcon",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gb-rem.gb",
+    "filename": "gb-rem.gb",
+    "sha256": "sha256:68fec69c8cf82a7e439927ee33aea53d053caed77522a4d095e1b9367ee79132",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

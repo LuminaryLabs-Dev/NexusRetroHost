@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "rorecon",
+  "title": "RoReCon",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/rorecon/game.json",
+    "contentPath": "entries/rorecon/RoReCon.gb",
+    "repository": "https://gitlab.com/teamknox/gbcrorecon",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/rorecon.gb",
+    "filename": "rorecon.gb",
+    "sha256": "sha256:bd2fd4f3ebfb6dbd6a0db9473490631a5c73d1631fc8c9fd8d5c585853e9a41b",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "a-slime-travel",
+  "title": "A Slime Travel",
+  "developer": "Dribble Studios",
+  "system": "gbc",
+  "license": "Zlib",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/a-slime-travel/game.json",
+    "contentPath": "entries/a-slime-travel/aslimetravel.gbc",
+    "repository": null,
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/a-slime-travel.gbc",
+    "filename": "a-slime-travel.gbc",
+    "sha256": "sha256:a92919a1e0d78683f0a245de55d3fc1a0fc07df74a758084ab2e552cb3bc115c",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

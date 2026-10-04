@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "crossconnect",
+  "title": "CrossConnect",
+  "developer": "quinnp",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/crossconnect/game.json",
+    "contentPath": "entries/crossconnect/CrossConnect.gbc",
+    "repository": "https://github.com/QuinnPainter/CrossConnect",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/crossconnect.gbc",
+    "filename": "crossconnect.gbc",
+    "sha256": "sha256:5465e7b4aa37ee0d630d2e63a026f282e8d17c213a2bd9f087417e68061e8b95",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

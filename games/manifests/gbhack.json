@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gbhack",
+  "title": "GBHack",
+  "developer": "statico",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gbhack/game.json",
+    "contentPath": "entries/gbhack/gbhack.gbc",
+    "repository": "https://github.com/statico/gbhack",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gbhack.gbc",
+    "filename": "gbhack.gbc",
+    "sha256": "sha256:f93a27e8b6272771bbba96105a2754f27ffc3f8317d71c063bdbd60dd0d74527",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

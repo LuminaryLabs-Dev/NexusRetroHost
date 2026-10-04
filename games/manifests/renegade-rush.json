@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "renegade-rush",
+  "title": "Renegade Rush",
+  "developer": "quinnp",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/renegade-rush/game.json",
+    "contentPath": "entries/renegade-rush/RenegadeRush.gb",
+    "repository": "https://github.com/QuinnPainter/Renegade-Rush",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/renegade-rush.gb",
+    "filename": "renegade-rush.gb",
+    "sha256": "sha256:0511a3de1bb59a5bd8bcf4e1463df7ea03a2aae66f30542b85ee51aa25f527a6",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

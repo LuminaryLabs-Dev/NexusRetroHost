@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gb-corp",
+  "title": "GB Corp.",
+  "developer": "Dr. Ludos",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gb-corp/game.json",
+    "contentPath": "entries/gb-corp/gbcorp.gb",
+    "repository": "https://github.com/drludos/GBcorp",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gb-corp.gb",
+    "filename": "gb-corp.gb",
+    "sha256": "sha256:5a39926a23ff50448859b2d924d8bba5a8c68db91563783f0c593a3aa8e7bad3",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

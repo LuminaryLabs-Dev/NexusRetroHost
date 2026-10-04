@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gb-clock",
+  "title": "GB-Clock (MBC3 RTC handling by GBC)",
+  "developer": "TeamKNOx",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gb-clock/game.json",
+    "contentPath": "entries/gb-clock/clock.gb",
+    "repository": "https://gitlab.com/teamknox/gbcclock",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gb-clock.gb",
+    "filename": "gb-clock.gb",
+    "sha256": "sha256:3acad9e7cdc9e53915a680d3a6e3f02ef9910a5e9456f8921831f93b766f910f",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "unstoppable-knight",
+  "title": "Unstoppable Knight",
+  "developer": "Rafagars",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/unstoppable-knight/game.json",
+    "contentPath": "entries/unstoppable-knight/knight2.gb",
+    "repository": "https://github.com/Rafagars/Unstoppable-Knight-GB",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/unstoppable-knight.gb",
+    "filename": "unstoppable-knight.gb",
+    "sha256": "sha256:42637b68a3d2806062ba410eb848e7ff2c021829a0fb616d15e3b56643f241fc",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

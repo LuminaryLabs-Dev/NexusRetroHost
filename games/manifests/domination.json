@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "domination",
+  "title": "Domination",
+  "developer": "Graham Coulby (IonicLimb)",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/domination/game.json",
+    "contentPath": "entries/domination/domination.gb",
+    "repository": "https://github.com/gcoulby/Domination",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/domination.gb",
+    "filename": "domination.gb",
+    "sha256": "sha256:3e87c6be7de03ecb97690a5dbcffac312344807eaae31ceaec71df9d24c0c133",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

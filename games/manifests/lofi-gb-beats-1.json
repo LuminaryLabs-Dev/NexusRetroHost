@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "lofi-gb-beats-1",
+  "title": "LoFi Chiptune Beats To Relax To Vol 1",
+  "developer": "Beatscribe",
+  "system": "gb",
+  "license": "Zlib",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/lofi-gb-beats-1/game.json",
+    "contentPath": "entries/lofi-gb-beats-1/lofi-chiptune-1.gb",
+    "repository": null,
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/lofi-gb-beats-1.gb",
+    "filename": "lofi-gb-beats-1.gb",
+    "sha256": "sha256:66c0bb3766e286d0e0406da1e3ddaf4637bba9d4dc31c6073792076cf0033b66",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

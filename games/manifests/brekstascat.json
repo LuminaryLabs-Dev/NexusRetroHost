@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "brekstascat",
+  "title": "Breksta's Cat",
+  "developer": "NotImplementedLife",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/brekstascat/game.json",
+    "contentPath": "entries/brekstascat/brekstascat_1_3.gb",
+    "repository": "https://github.com/NotImplementedLife/brekstascat",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/brekstascat.gb",
+    "filename": "brekstascat.gb",
+    "sha256": "sha256:e46dc09ce51b0bf3ca5c4539350ab7e2d4ea4d428329540605aa0a978ac3ece8",
+    "bytes": 131072
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "dusky-dungeon",
+  "title": "Dusky Dungeon",
+  "developer": "invertedHat",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/dusky-dungeon/game.json",
+    "contentPath": "entries/dusky-dungeon/DuskyDungeon-0.1.0.gb",
+    "repository": "https://github.com/inverted-hat/duskyDungeon",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/dusky-dungeon.gb",
+    "filename": "dusky-dungeon.gb",
+    "sha256": "sha256:e57c333cbddee9e47ee078936be9804a1d9fb95c3fd7a36d2689e26d526f4428",
+    "bytes": 262144
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

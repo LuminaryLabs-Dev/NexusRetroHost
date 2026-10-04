@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gbcpdc",
+  "title": "GB-PDC",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gbcpdc/game.json",
+    "contentPath": "entries/gbcpdc/gb-pdc.gb",
+    "repository": "https://gitlab.com/teamknox/gbcpdc",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gbcpdc.gb",
+    "filename": "gbcpdc.gb",
+    "sha256": "sha256:5708b63cdb21ad2e931996cea791c431bb4350fcb4eca141401812d9496048fe",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

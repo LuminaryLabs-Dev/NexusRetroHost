@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "2048gb",
+  "title": "2048gb",
+  "developer": "Sanqui",
+  "system": "gb",
+  "license": "Zlib",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/2048gb/game.json",
+    "contentPath": "entries/2048gb/2048.gb",
+    "repository": "https://github.com/Sanqui/2048-gb",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/2048gb.gb",
+    "filename": "2048gb.gb",
+    "sha256": "sha256:3ea2376b15b34bd26b10e6b31d2753bf8b086098dbdb5ee84d9c0f03d66d3d7f",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

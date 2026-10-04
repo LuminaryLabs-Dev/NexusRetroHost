@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "plyr0_qulqy",
+  "title": "qulqy",
+  "developer": "plyr0",
+  "system": "gbc",
+  "license": "BSD-3-Clause",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/plyr0_qulqy/game.json",
+    "contentPath": "entries/plyr0_qulqy/files/qulqy_jam.gbc",
+    "repository": "https://codeberg.org/plyr0/qulqy",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/plyr0_qulqy.gbc",
+    "filename": "plyr0_qulqy.gbc",
+    "sha256": "sha256:bd133d953b54a86b75464e766ba767182758b1eb14399b8b0aac22ff16d3ee5a",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

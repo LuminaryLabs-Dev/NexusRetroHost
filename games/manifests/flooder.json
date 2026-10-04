@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "flooder",
+  "title": "Flooder",
+  "developer": "Oliver Balfour",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/flooder/game.json",
+    "contentPath": "entries/flooder/flooder.gb",
+    "repository": "https://github.com/Obalfour/Flooder",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/flooder.gb",
+    "filename": "flooder.gb",
+    "sha256": "sha256:fc5b3c68dc9a8685eabe3dc69f937a0e703a236821b3d710bc60c797a85957e4",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

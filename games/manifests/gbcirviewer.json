@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "gbcirviewer",
+  "title": "IrViewer",
+  "developer": "TeamKNOx",
+  "system": "gbc",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/gbcirviewer/game.json",
+    "contentPath": "entries/gbcirviewer/ir_view.gb",
+    "repository": "https://gitlab.com/teamknox/gbcirviewer",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/gbcirviewer.gb",
+    "filename": "gbcirviewer.gb",
+    "sha256": "sha256:7a680058192def2108acea24838e9b3530d1f7faaacd0d3f56d0070dfa3ebb1f",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

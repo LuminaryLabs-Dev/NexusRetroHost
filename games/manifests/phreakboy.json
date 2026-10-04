@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "phreakboy",
+  "title": "Phreakboy (Enhanced DTMF Dialer)",
+  "developer": "TeamKNOx",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/phreakboy/game.json",
+    "contentPath": "entries/phreakboy/gb-phreak.gb",
+    "repository": "https://gitlab.com/teamknox/gbcphreakboy",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/phreakboy.gb",
+    "filename": "phreakboy.gb",
+    "sha256": "sha256:d12c49ffe3f8f9afc539eb33f66268c486a2d8c093803af672d5ac29f573cb48",
+    "bytes": 32768
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "porklike-gb",
+  "title": "Porklike GB",
+  "developer": "binji",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/porklike-gb/game.json",
+    "contentPath": "entries/porklike-gb/porklike.gb",
+    "repository": "https://github.com/binji/porklike.gb",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/porklike-gb.gb",
+    "filename": "porklike-gb.gb",
+    "sha256": "sha256:d4ee86833a580c92aa789aef03407b90a6cc6eb27e70d3477c41c970d0cf3f11",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}

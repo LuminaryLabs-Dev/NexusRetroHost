@@ -1,0 +1,29 @@
+{
+  "schema": "nexusretro.game/1",
+  "id": "tuff",
+  "title": "Tuff",
+  "developer": "BonsaiDen",
+  "system": "gb",
+  "license": "MIT",
+  "source": {
+    "database": "gbdev/database",
+    "commit": "50293559a496a3e20382fbf6a2e84b70ec622f88",
+    "metadataPath": "entries/tuff/game.json",
+    "contentPath": "entries/tuff/game.gb",
+    "repository": "https://github.com/BonsaiDen/Tuff.gb",
+    "declaredPlayable": true
+  },
+  "content": {
+    "path": "roms/tuff.gb",
+    "filename": "tuff.gb",
+    "sha256": "sha256:ca28220f7f04460cef5d652a6298989ff00efe92e2a08a67f874bc865d98f7a6",
+    "bytes": 65536
+  },
+  "support": {
+    "playable": true,
+    "saveState": true,
+    "memoryObservation": true,
+    "semanticProfile": false
+  },
+  "status": "bundled"
+}
