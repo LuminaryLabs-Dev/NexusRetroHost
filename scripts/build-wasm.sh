@@ -16,7 +16,7 @@ git -C "$SAMEBOY" clean -fdx
 git -C "$SAMEBOY" checkout --quiet --detach "$COMMIT"
 make -C "$SAMEBOY" -j2 CONF=release bootroms
 emmake make -C "$SAMEBOY/libretro" -j2 platform=emscripten CC=emcc CXX=em++ SHARED=-r BOOTROMS_DIR="$SAMEBOY/build/bin/BootROMs" BIN="$SAMEBOY/build/bin"
-CORE="$SAMEBOY/libretro/sameboy_libretro_emscripten.bc"
+CORE="$SAMEBOY/build/bin/sameboy_libretro_emscripten.bc"
 test -f "$CORE"
 mkdir -p "$ROOT/build/wasm"
 em++ "$ROOT/native/retro-worker/src/main.cpp" "$CORE" \
