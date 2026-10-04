@@ -19,7 +19,9 @@ emmake make -C "$SAMEBOY/libretro" -j2 platform=emscripten CC=emcc CXX=em++ SHAR
 CORE="$SAMEBOY/build/bin/sameboy_libretro_emscripten.bc"
 test -f "$CORE"
 mkdir -p "$ROOT/build/wasm"
-em++ "$ROOT/native/retro-worker/src/main.cpp" "$CORE" \
+CORE_OBJECT="$ROOT/build/wasm/sameboy-libretro.o"
+cp "$CORE" "$CORE_OBJECT"
+em++ "$ROOT/native/retro-worker/src/main.cpp" "$CORE_OBJECT" \
   -I"$ROOT/native/retro-worker/vendor" -std=c++20 -O3 -DNEXUSRETRO_STATIC_CORE=1 -fexceptions \
   --no-entry -sDISABLE_EXCEPTION_CATCHING=0 -sMODULARIZE=1 -sEXPORT_ES6=1 -sEXPORT_NAME=createRetroWorker \
   -sALLOW_MEMORY_GROWTH=1 -sMAXIMUM_MEMORY=536870912 -sFORCE_FILESYSTEM=1 -sNO_EXIT_RUNTIME=1 \
