@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Nexus RetroHost</title>
+  <link rel="stylesheet" href="./src/web/styles.css">
+  <link rel="stylesheet" href="./src/web/pages-root.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">NEXUS ENGINE · RETRO HOST</p>
+    <h1>NexusRetroHost</h1>
+    <p>Explore and download 50 redistributable Game Boy and Game Boy Color homebrew games.</p>
+  </header>
+  <main>
+    <section class="panel" aria-labelledby="library-title">
+      <div class="section-head">
+        <div><h2 id="library-title">Game library</h2><p id="library-count" aria-live="polite">Loading bundled games…</p></div>
+        <span id="runtime-badge">ROM downloads ready</span>
+      </div>
+      <label class="search-label" for="library-search">Find a game</label>
+      <input id="library-search" class="library-search" type="search" placeholder="Search games, developers, GB/GBC" autocomplete="off">
+      <p class="hint library-hint">Use <strong>Download ROM</strong> to save a game. Browser playback will be enabled when the compiled emulator is available.</p>
+      <div id="library" class="library" aria-live="polite"></div>
+    </section>
+    <section class="panel" aria-labelledby="runtime-title">
+      <h2 id="runtime-title">Browser emulator</h2>
+      <p id="status" role="status">The web player requires the SameBoy WebAssembly worker. It has not been compiled and published in this root-folder release, so Play is disabled until that build passes sandbox validation.</p>
+    </section>
+  </main>
+  <footer>Only redistributable homebrew ROMs from the existing repository library are listed. Their source and license metadata are preserved with each title. No commercial Nintendo games or BIOS files are bundled.</footer>
+  <script type="module" src="./src/web/pages-root.js"></script>
+</body>
+</html>
